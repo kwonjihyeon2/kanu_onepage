@@ -1,0 +1,142 @@
+@import url('reset.css');
+@import url('commons.css');
+
+/* nav 메뉴 */
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+.gnb{
+    display: flex;
+}
+.gnb li{
+    margin: 20px 30px;
+}
+.btn .xi-bars{
+    font-size: 2.5rem;
+}
+
+/* section01 */
+.section01{
+    position: relative;
+}
+.video-po{
+    width: 100%;
+    overflow: hidden;
+}
+.video{
+    width: 1903px;
+}
+
+.video-bg{
+    width: 100%;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    padding-top: 370px;
+    animation-name: title;
+    animation-duration: 3s;
+}
+@keyframes title {
+    0%{
+        top:1070px; background-color: rgba(0, 0, 0, 1);
+    }
+    100%{
+        top:0; background-color: rgba(0, 0, 0, 0.1);
+    }
+}
+
+.video-bg .main_title{
+    font-weight: 400;
+    font-size: 2rem;
+    color: #fff;
+    position: relative;
+}
+
+.video-bg .sub_title{
+    font-size: 4rem;
+    font-weight: 200;
+    color:red;
+    /* letter-spacing: 5px; */
+    margin-top: 10px;
+}
+/* section02 */
+.section02{
+    padding:150px 0px;
+}
+.product_arr .left,.product_arr .right{
+    color:red;
+    font-size: 2rem;
+    line-height: 350px;
+    padding: 0px 20px;
+}
+.product-text{
+    padding:20px 0;
+}
+.product-main{
+    overflow: hidden;
+    margin: 0 20px;
+}
+.product-main img{
+    transition: all .3s;
+}
+.product-main img:hover{
+    transform:scale(1.2);
+}
+.text-center h1{
+    margin: 20px;
+    font-size: 1.2rem;
+    text-align: left;
+    font-weight: 500;
+    color: #333;
+}
+
+.text-center p{
+    margin: 10px 20px;
+    text-align: left;
+    color: #333;
+}
+
+/* section03 */
+
+.section03{
+    background-color:#333;
+    padding: 150px 0px;
+}
+
+.sec03-title{
+    color:#fff;
+    font-size: 4rem;
+    font-weight: 100;
+    margin-bottom: 60px;
+}
+.img-padding{
+    padding: 20px;
+}
+.thi{
+    width: 100%;
+}
+.thi img{
+    width: 100%;
+}
+
+
+@media(min-width:767px){
+    .btn{
+        display: none;
+    }
+    
+}
+@media(max-width:768px){
+    .gnb{
+        display: none;
+    }
+}
