@@ -27,7 +27,7 @@ $('.slider-for').slick({
     asNavFor: '.slider-nav'
   });
   $('.slider-nav').slick({
-    slidesToShow: 2,
+    slidesToShow: 1.5,
     slidesToScroll: 1,
     asNavFor: '.slider-for',
     dots: true,
@@ -44,34 +44,15 @@ $('.slider-for').slick({
 });
 
 //kanu cf
-$('.tabmenu01').click(function(){
-  $('.tab01').fadeIn().css("display","flex")
-  $('.tab02').css('display','none');
-  $('.tab03').css('display','none');
-  $('.tab04').css('display','none');
-});
-$('.tabmenu02').click(function(){
-  $('.tab02').fadeIn().css("display","flex");
-  $('.tab01').css('display','none');
-  $('.tab03').css('display','none');
-  $('.tab04').css('display','none');
-});
-$('.tabmenu03').click(function(){
-  $('.tab03').fadeIn().css("display","flex");
-  $('.tab01').css('display','none');
-  $('.tab02').css('display','none');
-  $('.tab04').css('display','none');
-});
-$('.tabmenu04').click(function(){
-  $('.tab04').fadeIn().css("display","flex");
-  $('.tab01').css('display','none');
-  $('.tab03').css('display','none');
-  $('.tab02').css('display','none');
-});
-
-
-
-
+var swiper = new Swiper(".videoSwiper", {
+  loop:true,
+  autoplay:2000,
+  speed : 1500,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+})
 
 //kanu news
 var swiper = new Swiper(".mySwiper", {

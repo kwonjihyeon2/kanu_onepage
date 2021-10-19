@@ -24,7 +24,8 @@
         <nav class="scroll_01">
             <div class="logo">
                 <a href="#">
-                    <img src="assets/images/logo.png" alt="로고">
+                    <img src="assets/images/logo.png" alt="로고" class="pc-logo">
+                    <img src="assets/images/mo-logo.png" alt="모바일 로고" class="mo-logo">
                 </a>
             </div>
             <ul class="gnb">
@@ -67,19 +68,19 @@
             </div>
             <div class="row col-center">
                 <div class="col-66 row col-center slider-nav">
-                    <div class="img col-50 product-main">
+                    <div class="img product-main">
                         <img src="assets/images/kanu_menu1.jpg" alt="">
                     </div>
-                    <div class="img col-50 product-main">
+                    <div class="img product-main">
                         <img src="assets/images/kanu_menu2.jpg" alt="">
                     </div>
-                    <div class="img col-50 product-main">
+                    <div class="img product-main">
                         <img src="assets/images/kanu_menu3.jpg" alt="">
                     </div>
-                    <div class="img col-50 product-main">
+                    <div class="img product-main">
                         <img src="assets/images/kanu_menu4.jpg" alt="">
                     </div>
-                    <div class="img col-50 product-main">
+                    <div class="img product-main">
                         <img src="assets/images/kanu_menu5.jpg" alt="">
                     </div>
                 </div>
@@ -109,105 +110,87 @@
         </div>
     </section>
     <!-- section02 end -->
-    
+
+    <!-- swiper -->
     <section class="section03" id="section03">
-        <div class="container bg03">
-            <div class="row col-center">
-                    <div class="kanu-title text-center">
-                        <h1>KANU CF</h1>
-                        <p class="white">따뜻한 이야기와 삶의 향기가 담겨있는 CF 모음</p>
-                    </div>
-            </div>        
-            <div class="tab row row-center">
-                <div class="tabmenu">
-                    <ul>
-                        <li class="tabmenu01"><h1>카누 시그니처
-                        </h1></li>
-                        <li class="tabmenu02"><h1>카누 아이스</h1></li>
-                        <li class="tabmenu03"><h1>카누 라떼</h1></li>
-                        <li class="tabmenu04"><h1>브랜드캠페인</h1></li>
-                    </ul>
-                </div>
-                
-                <div class="tabs">
-                    <div class="tab01 row">
-                        <img src="assets/images/kanu_video09.png" alt="카누 시그니처 사진">
-                        <div class="text">
-                            <h1>카누 시그니처 30"</h1>
-                            <p>카누의 첫 번째 프리미엄 커피,</p>
-                            <p>KANU Signature</p>
-                        </div>
-                    </div>
-                    <div class="tab02 row none">
-                        <img src="assets/images/kanu_video.png" alt="카누 아이스 사진">
-                        <div class="text">
-                            <h1>카누 아이스 15"</h1>
-                            <p>여름 바다처럼 시원한</p>
-                            <p>세상에서 가장 쿨한 카페, 카누</p>
-                        </div>
-                    </div>
-                    <div class="tab03 row none">
-                        <img src="assets/images/kanu_video06.png" alt="카누 아이스 사진">
-                        <div class="text">
-                            <h1>카누 돌체라떼 7"</h1>
-                            <p>ICE? NICE! </p>
-                            <p>여름이 더 좋아지는 카누 라떼</p>
-                        </div>
-                    </div>
-                    <div class="tab04 row none">
-                        <img src="assets/images/kanu_video03.png" alt="브랜드 캠페인 사진">
-                        <div class="text">
-                            <h1>브랜드 캠페인 30"</h1>
-                            <p>그 어떤 당신의 커피라이프도</p>
-                            <p>카누 안에서 즐길 수 있도록</p>
-                        </div>
-                    </div>
-                    <div class="videobtn">
-                        <button><span class="xi-long-arrow-left"></span>CF 보기</button>
-                    </div>
+        <div class="container">
+            <div class="product-text text-center">
+                <div class="kanu-title">
+                    <h1>KANU CF</h1>
                 </div>
             </div>
-             
+            <div class="videoSwiper swiper text-center">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="assets/images/kanu_banner.jpg" alt="">
+                    <div class="swipertext">
+                        <h1>EP.01</h1>
+                        <h1>카누 시그니처 본편(30")</h1>
+                        <p>카누의 첫번째 시그니처 커피</p>
+                        <div class="swipericon">
+                            <span class="xi-long-arrow-right"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/kanu_video.JPG" alt="">
+                    <div class="swipertext">
+                        <h1>EP.02</h1>
+                        <h1>카누 아이스(30")</h1>
+                        <p>여름엔 시원한 카누 아이스와 함께</p>
+                        <div class="swipericon">
+                            <span class="xi-long-arrow-right"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/kanu_video1.jpg" alt="">
+                    <div class="swipertext">
+                        <h1>EP.03</h1>
+                        <h1>카누 디카페인(11")</h1>
+                        <p>언제 마셔도 부담없는 카누 디카페인</p>
+                        <div class="swipericon">
+                            <span class="xi-long-arrow-right"></span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>              
         </div>
     </section>
+    
+
     <!-- section03 end -->
     <section class="section05" id="section05">
         <div class="container">
-            <div class="events row">
-                    <div class="kanu-title text-center">
-                        <h1>EVENTS</h1>
+            <div class="kanu-title"></div>
+            <div class="row">
+                <div class="col-33" data-aos="fade-up"
+                data-aos-duration="500">
+                    <div class="eventimg">
+                        <img src="assets/images/event04.jpg" alt="">
+                        <div class="slide">
+                            <h1>나만의 홈카페 공유하고 카누 세트 받자 !</h1>
+                        </div>
                     </div>
-                <div class="line col-center">
-                    <div class="row-center">
-                        <div class="tablist">
-                            <button class="eventbtn tabbtn01">
-                                <h1>#나만의_홈카페</h1>
-                            </button>
-                            <button class="eventbtn tabbtn02">
-                                <h1>#나만의_레시피</h1>
-                            </button>
+                </div>
+                <div class="col-33" data-aos="fade-up"
+                data-aos-duration="800" data-aos-delay="300">
+                    <div class="eventimg">
+                        <img src="assets/images/event03.jpg" alt="">
+                        <div class="slide">
+                            <h1>나만의 홈카페 공유하고 카누 세트 받자 !</h1>
                         </div>
-                        <div class="info-1 row row-center tab_detail01">
-                            <div class="details">
-                                <h1>나만의 홈카페를 공유하고 카누 라떼세트 받자!</h1>
-                                <h4>무더위도 주춤해진 날씨, 나들이 대신 나만의 홈카페를 카누로 즐기고 계신 당신 !</h4>
-                                <h4>지금 바로 #카누 #나만의_홈카페를 태그한 게시물을 인스타그램에 업로드하면 추첨을 통해 카누 텀블러와 라떼 세트를 드립니다.</h4>
-                                <h3>기간 : 21.10.10 ~ 21.10.17</h3>
-                            </div>
-                            <div class="text-center">
-                                <img src="assets/images/kanu_menu2.png" alt="">
-                            </div>
-                        </div>
-                        <div class="info-2 row-center row tab_detail01 none">
-                            <div class="details">
-                                <h1>나만의 홈카페를 공유하고 카누 라떼세트 받자!</h1>
-                                <h4>무더위도 주춤해진 날씨, 나들이 대신 나만의 홈카페를 카누로 즐기고 계신 당신 !</h4>
-                                <h4>지금 바로 #카누 #나만의_홈카페를 태그한 게시물을 인스타그램에 업로드하면 추첨을 통해 카누 텀블러와 라떼 세트를 드립니다.</h4>
-                                <h3>기간 : 21.10.10 ~ 21.10.17</h3>
-                            </div>
-                            <div class="text-center">
-                                <img src="assets/images/kanu_menu2.png" alt="">
-                            </div>
+                    </div>
+                </div>
+                <div class="col-33" data-aos="fade-up"
+                data-aos-duration="800" data-aos-delay="800">
+                    <div class="eventimg">
+                        <img src="assets/images/event02.jpg" alt="">
+                        <div class="slide">
+                            <h1>나만의 홈카페 공유하고 카누 세트 받자 !</h1>
                         </div>
                     </div>
                 </div>
@@ -216,7 +199,7 @@
     </section>
     <!-- section05 end -->
 
-    <section class="section04" id="section04">
+    <section class="section06" id="section06">
         <div class="container">
             <div class="row">
                 <div class="product-text">

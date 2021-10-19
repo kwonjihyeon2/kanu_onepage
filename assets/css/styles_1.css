@@ -22,6 +22,9 @@ nav{
 .gnb li{
     margin: 20px 30px;
 }
+.btn{
+    padding-right: 30px;
+}
 .btn .xi-bars{
     font-size: 2.5rem;
 }
@@ -32,8 +35,13 @@ nav{
     position: relative;
 }
 .video{
+   width: 100%;
+   height: 100%;
+}
+.video video{
     width: 100%;
-    overflow: hidden;
+    height: 100%;
+    object-fit: cover;
 }
 .main_title {
     text-align: center;
@@ -67,7 +75,7 @@ nav{
     position: absolute;
     top: 25%;
     right: 0%;
-    background-color: lightgray;
+    background-color: #f0f0f0;
     opacity: 0.3;
     z-index: -10;
     padding: 210px 370px;
@@ -96,6 +104,7 @@ nav{
     position: absolute;
     top:50%;
     right: -7%;
+    background:none;
     font-size: 0;
     border: none;
     cursor: pointer;
@@ -113,6 +122,7 @@ nav{
     top:50%;
     right:-15%;
     z-index: 99;
+    background: none;
     font-size: 0;
     border: none;
     cursor: pointer;
@@ -136,125 +146,89 @@ nav{
 
 /* section03 */
 .section03{
-    position: relative;
+    background-color: #f0f0f0;
 }
-.bg03::after{
-    content: "";
-    position: absolute;
-    width: 45%;
-    height: 75%;
-    background-color: #38302F;
-    z-index: -10;
-    top: 6%;
-    left: 0;
-    border-radius: 0px 30px 30px 0px;
+.sec-bg1{
+    width: 50%;
+    height: 50vh;
+    background: url('../images/kanu_banner.jpg') no-repeat center;
+    background-size: cover;
 }
-.bg03::before{
-    content: "";
-    position: absolute;
-    width: 60%;
-    height: 80%;
-    background-color: #E3DAD1;
-    z-index: -99;
-    top: 10%;
-    right: 0;
-    border-radius: 0px 0px 0px 30px;;
+.sec-bg2{
+    width: 50%;
+    height: 50vh;
+    background: url('../images/kanu_video.JPG') no-repeat center;
+    background-size: cover;
 }
-.tab{
-    justify-content: space-evenly;
-}
-.tabmenu{
-    margin: 30px 50px;
-}
-.tabmenu ul li {
-    padding: 30px;
-    font-size: 1.5rem;
-    font-weight: 500;
-    position: relative;
+.videoSwiper{
     cursor: pointer;
-    color:#524B4A;
+    position: relative;
 }
-
-.tabmenu ul li h1::after{
-    content: "";
+.swipertext{
     position: absolute;
-    bottom:0;
-    left: 5%;
-    width: 0;
-    height:0;
-    background-color: red;
-}
-.tabmenu ul li:hover h1{
-    color: #fff;
-}
-.tabmenu ul li:hover h1::after{
-    bottom:0%;
-    left: 5%;
-    width: 130%;
-    height: 10px;
-    background-color: red;
-    transition:0.5s ease-in-out;
-    z-index: 1;
-}
-.text{
-    padding: 50px 0px;
-}
-.text h1{
+    bottom:-5%;
+    left: 7%;
+    z-index: 99;
+    color: #333;
+    background-color: #fff;
     padding: 50px;
-    font-size: 2rem;
-    font-weight: 500;
+    width: 270px;
+    text-align: left;
 }
-.text p{
-    padding: 0px 0px 30px 50px;
+.swipertext h1{
     font-size: 1.5rem;
     font-weight: 500;
-    color: #777;
 }
-.tabs{
+.swipertext p{
+    font-size: 1rem;
+    padding: 30px 0px;
+}
+.swipericon{
+    position: relative;
+    padding: 10px;
+}
+.xi-long-arrow-right{
+    position: absolute;
+    top:-50%;
+    right: -10%;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #000;
+    border-radius: 100%;
+    padding:8px;
+    animation-name: arrow;
+    animation-duration: 1.5s;
+    animation-iteration-count:infinite;
+}
+@keyframes arrow {
+    0%{
+        right: -10%;
+    }
+    50%{
+        right: -13%;
+    }
+    100%{
+        right:-10%;
+    }
+}
+
+/* section05 */
+.section05{
+    background:linear-gradient(-180deg, #f0f0f0 50%, #fff 50%);
+}
+.eventimg{
+    padding: 20px;
     position: relative;
 }
-.videobtn{
+.eventimg img{
+    width: 100%;
+}
+.slide{
     position: absolute;
-    bottom:10%;
-    right: 15%;
-    color: #333;
+    top:0;
+    left: 0;
 }
-.videobtn button{
-    padding: 20px 40px;
-    background: none;
-    border: 1px solid #333;
-    font-size: 1rem;
-}
-.videobtn .xi-long-arrow-left{
-    padding-right: 20px;
-    font-size: 1rem;
-}
-/* .center{
-    position: relative;
-}
-.left::before{
-    content: "";
-    position: absolute;
-    width: 150px;
-    height: 100%;
-    background: linear-gradient(to left,#F4F1E6,transparent);
-    top: 0;
-    left: 35%;
-    z-index: 10;
-}
-.left::after{
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 100%;
-    background: linear-gradient(to left,#F4F1E6,transparent);
-    top: 0;
-    left: 38%;
-    z-index: 10;
-} */
-
-
-/* section04 */
+/* section06 */
 .contents .col-25 h1{
     font-size: 1.2rem;
     color: #777;
@@ -315,66 +289,9 @@ nav{
     background-color: rgba(0,0,0,0.5);
 }
 
-/* section05 */
-#section05{
-    background: url('../images/dolce02.jpg') no-repeat center;
-    background-size:auto;
-    padding: 0px;
-    margin: 80px auto;
-
-}
-.events{
-    flex-direction: column;
-    padding: 80px 0px;
-    color: #333;
-    word-break: keep-all;
-}
-.line{
-    width: 70%;
-    margin: 0 auto;
-}
-
-.eventbtn{
-    background: none;
-    margin-right:30px;
-    border: none;
-    border-bottom:3px solid #777;
-}
-.line .eventbtn h1{
-    color: #777;
-    padding: 10px 20px 10px 0px;
-    font-size: 1.2rem;
-}
-.details h1{
-    margin-bottom: 50px;
-    font-size: 2rem;
-}
-.details h4{
-    font-size: 1.2rem;
-    margin: 10px 0px;
-}
-.tab_detail01{
-    justify-content: space-between;
-}
-.details{
-    width: 40%;
-}
-.details h3{
-    font-size: 1.2rem;
-    padding:20px 0px;
-}
-
 @media(max-width:1441px){
     .slide_bg::after{
         top: 30%;
-    }
-    .bg03::after{
-        height: 85%;
-        top: 0%;
-    }
-    .bg03::before{
-        height: 85%;
-        top: 8%;
     }
 }
 @media(max-width:1028px){
@@ -414,9 +331,15 @@ nav{
 @media(min-width:770px){
     .btn{
         display: none;
-    }  
+    }
+    .mo-logo{
+        display: none;
+    }
 }
-@media(max-width:768px){
+@media(max-width:769px){
+    .pc-logo{
+        display: none;
+    }
     .gnb{
         display: none;
     }
@@ -437,36 +360,17 @@ nav{
         right: -18%;
     }
     /* section03 */
-    .firstlist,.wrap50{
-        flex-wrap: wrap;
-    }
-    .tab{
-        flex-direction: column;
-    }
     .tabmenu{
-        margin: 30px auto;
-    }
-    .tabmenu ul li{
-        padding: 20px;
-    }
-    .tabmenu ul li:hover h1::after{
         width: 100%;
     }
-    .tab .tabmenu ul{
-        display: flex;
-    }
-    .tabs div{
-        flex-direction: inherit;
+    .tab img{
+        width: 100%;
     }
     .bg03>.product-text,.line>.product-text{
         padding-bottom: 0;
     }
     .text{
         padding: 30px 0px;
-    }
-    /* section04 */
-    .list01 .firstlist .col-25{
-        margin:20px auto;
     }
     /* section05 */
     .event_p{
@@ -481,5 +385,17 @@ nav{
     .swiper-slide{
         width: 45%;
         height: 90%;
+    }
+    /* section06 */
+    .list01 .firstlist .col-25{
+        margin:20px auto;
+    }
+}
+@media(max-width:415px){
+    .logo img {
+        padding-left: 15px;
+    }
+    .btn{
+        padding-right: 15px;
     }
 }
