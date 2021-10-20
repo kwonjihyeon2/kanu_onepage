@@ -8,7 +8,7 @@ $(window).scroll(function(){
     if(Math.abs(lastScrollTop - scrollTop) <= delta)
     return; 
 
-    if ((scrollTop > lastScrollTop) && (lastScrollTop>0)) {
+    if ((scrollTop > lastScrollTop) && (lastScrollTop>15)) {
         $(".scroll_01").css("top","-100px");
     } else {
         $(".scroll_01").css("top","0px");
@@ -16,6 +16,10 @@ $(window).scroll(function(){
     lastScrollTop = scrollTop;
 });
 
+//mobile 메뉴
+$('.btn').click(function(){
+  $('.gnb').toggleClass("active");
+});
 
 
 //카누 메뉴 스크롤
@@ -67,17 +71,6 @@ var swiper = new Swiper(".mySwiper", {
   }
 });
 
-//event
-$('.tabbtn01').click(function(){
-  $(this).css("border","1px solid #777");
-  $('.tabbtn02').css("border","none");
-  $('.info-1').fadeIn();;
-  $('.info-2').css('display','none');
-});
 
-$('.tabbtn02').click(function(){
-  $(this).css("border","1px solid #777");
-  $('.tabbtn01').css("border","none");
-  $('.info-2').fadeIn();
-  $('.info-1').css('display','none');
-});
+
+//background scroll

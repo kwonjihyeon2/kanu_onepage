@@ -10,7 +10,8 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 10px 0px;
-    z-index: 99;transition:all .3s
+    z-index: 10;
+    transition:all .3s
 }
 
 .logo img{
@@ -21,10 +22,22 @@ nav{
 }
 .gnb li{
     margin: 20px 30px;
+    position: relative;
+}
+.gnb li:hover .a-hover:after{
+    content: '';
+    position: absolute;
+    top: -80%;
+    left: 50%;
+    background-color: red;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
 }
 .btn{
     padding-right: 30px;
 }
+
 .btn .xi-bars{
     font-size: 2.5rem;
 }
@@ -32,6 +45,7 @@ nav{
 /* section01 */
 .section01{
     width: 100%;
+    height: 100%;
     position: relative;
 }
 .video{
@@ -73,12 +87,12 @@ nav{
 .slide_bg::after{
     content: "";
     position: absolute;
-    top: 25%;
+    top: 30%;
     right: 0%;
-    background-color: #f0f0f0;
-    opacity: 0.3;
+    background-color: rgb(240, 240, 240);
+    opacity: 1;
     z-index: -10;
-    padding: 210px 370px;
+    padding: 230px 400px;
 }
 .product-text{
     padding-bottom:50px;
@@ -146,19 +160,7 @@ nav{
 
 /* section03 */
 .section03{
-    background-color: #f0f0f0;
-}
-.sec-bg1{
-    width: 50%;
-    height: 50vh;
-    background: url('../images/kanu_banner.jpg') no-repeat center;
-    background-size: cover;
-}
-.sec-bg2{
-    width: 50%;
-    height: 50vh;
-    background: url('../images/kanu_video.JPG') no-repeat center;
-    background-size: cover;
+    background:linear-gradient(-180deg, #fff 50%, #f0f0f0 50%);
 }
 .videoSwiper{
     cursor: pointer;
@@ -167,7 +169,7 @@ nav{
 .swipertext{
     position: absolute;
     bottom:-5%;
-    left: 7%;
+    left: 5%;
     z-index: 99;
     color: #333;
     background-color: #fff;
@@ -212,81 +214,134 @@ nav{
     }
 }
 
-/* section05 */
-.section05{
+/* section04 */
+.section04{
     background:linear-gradient(-180deg, #f0f0f0 50%, #fff 50%);
 }
 .eventimg{
-    padding: 20px;
+    padding: 30px 20px;
     position: relative;
+    overflow-x: hidden;
+    cursor: pointer;
 }
 .eventimg img{
     width: 100%;
 }
-.slide{
+.xi-plus{
     position: absolute;
-    top:0;
-    left: 0;
+    bottom: 32px;
+    right: 5%;
+    font-size: 2rem;
+    padding: 15px;
+    background-color: #000;
+    color: #fff;
+}
+.event{
+    position: absolute;
+    opacity: 0;
+    bottom:3%;
+    left: -100%;
+    padding: 30px;
+    width: 250px;
+    color: #333;
+    background-color: #fff;
+    transition: 0.5s ease; 
+    box-shadow:5px 5px 10px #f0f0f0;  
+}
+.eventimg:hover .event{
+    opacity: 1;
+    left: 20%;
+}
+.event h1{
+    font-size: 1.5rem;
+    padding-bottom: 30px;
+}
+.event h4{
+    padding: 10px 0;
+    font-size: 1rem;
+}
+/* section05 */
+.newstitle{
+    padding: 80px 0;
+    background-color: #f0f0f0;
+}
+.news{
+    position: relative;
+}
+.newsimg{
+    align-items: flex-end;
+    position: absolute;
+    top:-44%;
+    right: 0;
+}
+.newsinfo{
+    text-align: right;
+    font-size: 1rem;
+    line-height: 25px;
+    font-weight: 400;
+    padding-bottom: 30px ;
+    color: #333;
+}
+.xi-angle-down{
+    position: absolute;
+    bottom:-5%;
+    left: 20%;
+    font-size: 2rem;
+    color: #333;
+    font-weight: 100;
+    opacity: 0.5;
+    animation: news 2s;
+    animation-iteration-count:infinite;
 }
 /* section06 */
-.contents .col-25 h1{
-    font-size: 1.2rem;
-    color: #777;
-    padding: 30px 0px;
+.tab{
+    position: relative;
 }
-.contents .col-25 p{
-    font-size: 2rem;
-    word-break: keep-all;
-    padding: 30px 0px;
-}
-.mySwiper{
-    height: 500px;
-}
-.mySwiper .swiper-wrapper{
-    align-items: center;
-    margin-left: -200px;
-}
-.mySwiper .swiper-wrapper .swiper-slide{
-    width: 300px;
-    height: 350px;
-    border-radius: 10px;
-}
-.mySwiper .swiper-wrapper .swiper-slide img{
-    width: 300px;
-    height: 350px;
-    border-radius: 10px;
-    filter: brightness(0.8);
-}
-.mySwiper .swiper-wrapper .swiper-slide-active{
-    transform: translateY(-10%);
-    transition: .4s;
-}
-.text_hover{
-    width: 100%;
-    height: 50%;
+.tabbar{
     position: absolute;
-    bottom:0%;
-    /* overflow: hidden; */
-    text-align: justify;
-    border-radius: 10px;
-    word-break: keep-all;
-    color: #fff;
-    transition: .4s ease;
+    top:0;
+    right: 0;
 }
-.text_hover h1{
-    font-size: 1.2rem;
-    font-weight: 500;
-    padding: 30px;
+.tabbar li{
+    margin-right: 30px;
 }
-.text_hover p{
+@keyframes news{
+    0%{
+        bottom: -5%;
+        opacity: 1;
+    }
+    50%{
+        bottom: -8%;
+        opacity: 0.5;
+    }
+    100%{
+        bottom: -5%;
+        opacity: 1;
+    }
+}
+/* section06 */
+.news-bg01{
+    background: url('../images/news07.jpg') no-repeat center;
+    background-size: cover;
+}
+.news-bg02{
+    background: url('../images/news06.jpg') no-repeat center;
+    background-size: cover;
+}
+.news-bg03{
+    background: url('../images/news05.jpg') no-repeat center;
+    background-size: cover;
+}
+.info{
+    padding: 80px 0;
+    color: #333;
+}
+.info h1{
+    font-size: 2rem;
+}
+.info p{
     font-size: 1rem;
-    padding: 30px;
-}
-.swiper-slide:hover .text_hover{
-    bottom: 0%;
-    height: 100%;
-    color: #fff;
-    background-color: rgba(0,0,0,0.5);
+    padding: 30px 0;
 }
 
 @media(max-width:1441px){
@@ -332,6 +387,9 @@ nav{
     .btn{
         display: none;
     }
+    .gnb{
+        display: flex !important;
+    }
     .mo-logo{
         display: none;
     }
@@ -340,8 +398,33 @@ nav{
     .pc-logo{
         display: none;
     }
+    .logo{
+        z-index: 99;
+    }
     .gnb{
-        display: none;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 600px;
+        display: block;
+        z-index: 10;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #fff;
+        padding-top: 100px;
+        margin-top: -900px;
+        transition: 0.5s;
+    }
+    .active{
+        margin-top: 0px;
+    }
+    .gnb li{
+        margin: 50px auto;
+    }
+    .btn{
+        cursor: pointer;
+        z-index: 99;
     }
     /* sectino02 */
     .slide h1,.slide p{
@@ -372,7 +455,7 @@ nav{
     .text{
         padding: 30px 0px;
     }
-    /* section05 */
+    /* section04 */
     .event_p{
         display: block;
     }
