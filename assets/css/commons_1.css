@@ -60,6 +60,9 @@ section{
 .row-center{
     align-items: center;
 }
+.product-text{
+    padding-bottom:50px;
+}
 .between{
     justify-content: space-between;
 }

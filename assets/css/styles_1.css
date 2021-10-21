@@ -82,80 +82,31 @@ nav{
 
 /* section02 */
 .section02{
+    background: #f0f0f0;
+}
+.scroll{
     position: relative;
+    overflow: hidden;
+    flex-direction: column;
 }
-.slide_bg::after{
-    content: "";
-    position: absolute;
-    top: 30%;
-    right: 0%;
-    background-color: rgb(240, 240, 240);
-    opacity: 1;
-    z-index: -10;
-    padding: 230px 400px;
+.end{
+    justify-content: flex-end;
 }
-.product-text{
-    padding-bottom:50px;
-}
-
-.slide h1{
-    word-break: keep-all;
-    font-size: 1.5rem;
-    font-weight: 400;
-    color:#333;
-    margin: 20px;
-}
-.slide p{
-    word-break: keep-all;
-    margin: 30px 20px;
-    color: #333;
-}
-
-.slider-nav{
-    position: relative;
-}
-.slider-nav .slick-prev{
-    position: absolute;
-    top:50%;
-    right: -7%;
-    background:none;
-    font-size: 0;
-    border: none;
-    cursor: pointer;
-    z-index: 99;
-}
-.slider-nav .slick-prev::after{
-    content:"\e93b";
-    font-family: 'xeicon';
-    font-size: 1.5rem;
-    color:red;
-}
-
-.slider-nav .slick-next{
-    position: absolute;
-    top:50%;
-    right:-15%;
-    z-index: 99;
-    background: none;
-    font-size: 0;
-    border: none;
-    cursor: pointer;
-}
-.slider-nav .slick-next::after{
-    content:"\e93e";
-    font-family: 'xeicon';
-    font-size: 1.5rem;
-    color:red;
-}
-
-.slick-dots{
-    display: none !important; 
-}
-.slick-slide{
+.scroll img{
     filter: brightness(0.8);
 }
-.slick-current{
-    filter: brightness(1);
+.scrolltext{
+    position: absolute;
+    top:-10%;
+    left: 50%;
+    font-size: 2rem;
+    z-index: 10;
+    color: #fff;
+    transition: all .5s;
+    transform: translate(-50%,-50%);
+}
+.scroll:hover .scrolltext{
+    top: 50%;
 }
 
 /* section03 */
@@ -311,17 +262,6 @@ nav{
     }
 }
 /* section06 */
-.tab{
-    position: relative;
-}
-.tabbar{
-    position: absolute;
-    top:-5%;
-    left: 0;
-}
-.tabbar li{
-    margin-right: 30px;
-}
 .p-3{
     padding:50px 0;
 }
@@ -365,27 +305,11 @@ nav{
         top: 38%;
         padding:130px 250px;
     }
-    .tabmenu{
-        margin: 30px auto;
-    }
-    .tabmenu ul li{
-        padding: 30px 0;
-    }
-    .tabs .row img{
-        width: 50%;
-    }
     .text h1{
         padding: 30px;
     }
     .text p{
         padding: 0px 0px 30px 30px;
-    }
-    .tabs div{
-        justify-content: flex-end;
-    }
-    .tabmenu ul li:hover h1::after{
-        left: 0%;
-        width: 150%;
     }
     .firstlist{
         flex-wrap: wrap;
@@ -454,12 +378,6 @@ nav{
         right: -18%;
     }
     /* section03 */
-    .tabmenu{
-        width: 100%;
-    }
-    .tab img{
-        width: 100%;
-    }
     .bg03>.product-text,.line>.product-text{
         padding-bottom: 0;
     }
