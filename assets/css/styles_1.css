@@ -10,7 +10,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 10px 0px;
-    z-index: 10;
+    z-index: 99;
     transition:all .3s
 }
 
@@ -261,6 +261,9 @@ nav{
     font-size: 1rem;
 }
 /* section05 */
+.section05{
+    overflow-x: hidden;
+}
 .newstitle{
     padding: 80px 0;
     background-color: #f0f0f0;
@@ -293,18 +296,6 @@ nav{
     animation: news 2s;
     animation-iteration-count:infinite;
 }
-/* section06 */
-.tab{
-    position: relative;
-}
-.tabbar{
-    position: absolute;
-    top:0;
-    right: 0;
-}
-.tabbar li{
-    margin-right: 30px;
-}
 @keyframes news{
     0%{
         bottom: -5%;
@@ -320,28 +311,48 @@ nav{
     }
 }
 /* section06 */
-.news-bg01{
-    background: url('../images/news07.jpg') no-repeat center;
-    background-size: cover;
+.tab{
+    position: relative;
 }
-.news-bg02{
-    background: url('../images/news06.jpg') no-repeat center;
-    background-size: cover;
+.tabbar{
+    position: absolute;
+    top:-5%;
+    left: 0;
 }
-.news-bg03{
-    background: url('../images/news05.jpg') no-repeat center;
-    background-size: cover;
+.tabbar li{
+    margin-right: 30px;
+}
+.p-3{
+    padding:50px 0;
+}
+.info h3{
+    font-size: 3rem;
+    font-weight: 200;
+    font-style: italic;
+    padding-bottom:30px;
+}
+.info h3::after{
+    content: '';
+    position: absolute;
+    top: 8%;
+    left: 30%;
+    width: 300px;
+    height: 1px;
+    background-color: #333;
 }
 .info{
-    padding: 80px 0;
+    position: relative;
+    padding: 0 80px;
+    text-align: left;
     color: #333;
 }
 .info h1{
     font-size: 2rem;
+    padding-bottom: 30px;
 }
 .info p{
     font-size: 1rem;
-    padding: 30px 0;
+    padding: 10px 0 20px 0;
 }
 
 @media(max-width:1441px){

@@ -21,7 +21,6 @@ $('.btn').click(function(){
   $('.gnb').toggleClass("active");
 });
 
-
 //카누 메뉴 스크롤
 $('.slider-for').slick({
     slidesToShow: 1,
@@ -71,6 +70,3 @@ var swiper = new Swiper(".mySwiper", {
   }
 });
 
-
-
-//background scroll
