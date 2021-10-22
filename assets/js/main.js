@@ -22,29 +22,33 @@ $('.btn').click(function(){
 });
 
 //카누 메뉴 스크롤
-$('.slider-for').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    fade: true,
-    asNavFor: '.slider-nav'
-  });
-  $('.slider-nav').slick({
-    slidesToShow: 1.5,
-    slidesToScroll: 1,
-    asNavFor: '.slider-for',
-    dots: true,
-    centerMode: true,
-    focusOnSelect: true,
-    Responsive: [
-      {
-        breakpoint : 770,
-        settings:{
-          slidesToShow: 1
-        }
-      }
-    ]
+$('.tablist').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+//   responsive: [
+//     {
+//       breakpoint: 768,
+//       settings: {
+//         arrows: false,
+//         centerMode: true,
+//         centerPadding: '40px',
+//         slidesToShow: 3
+//       }
+//     },
+//     {
+//       breakpoint: 480,
+//       settings: {
+//         arrows: false,
+//         centerMode: true,
+//         centerPadding: '40px',
+//         slidesToShow: 1
+//       }
+//     }
+//   ]
 });
+
+
 
 //kanu cf
 var swiper = new Swiper(".videoSwiper", {
@@ -69,4 +73,3 @@ var swiper = new Swiper(".mySwiper", {
       disableOnInteraction : false, 
   }
 });
-

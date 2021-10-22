@@ -43,11 +43,7 @@ nav{
 }
 
 /* section01 */
-.section01{
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
+
 .video{
    width: 100%;
    height: 100%;
@@ -57,56 +53,29 @@ nav{
     height: 100%;
     object-fit: cover;
 }
-.main_title {
-    text-align: center;
-    color: white;
-    position: absolute;
-    top:50%;
-    left: 50%;
-    font-size: 2rem;
-    transform: translate(-50%,-50%);
-}
-.main_title h1{
-    padding-bottom: 50px;
-}
-.text_effect{
-    position: absolute;
-    bottom:100%;
-    left: 0%;
-    width: 100%;
-    height: 0%;
-    overflow: hidden;
-    transition: 2s ease;
-}
-
 
 /* section02 */
 .section02{
-    background: #f0f0f0;
+    height: 100vh;
+    background-color: #ffffff;
 }
-.scroll{
-    position: relative;
-    overflow: hidden;
+.product{
+    width: 100%;
+}
+.tab ul{
     flex-direction: column;
 }
-.end{
-    justify-content: flex-end;
+.tab ul li{
+    font-style: italic;
+    font-size: 1.5rem;
+    margin: 50px 0;
 }
-.scroll img{
-    filter: brightness(0.8);
+.tablist{
+    width: 80%;
 }
-.scrolltext{
-    position: absolute;
-    top:-10%;
-    left: 50%;
-    font-size: 2rem;
-    z-index: 10;
-    color: #fff;
-    transition: all .5s;
-    transform: translate(-50%,-50%);
-}
-.scroll:hover .scrolltext{
-    top: 50%;
+.tablist div img{
+    width:100px;
+    height: 100px;
 }
 
 /* section03 */
