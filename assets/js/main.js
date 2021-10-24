@@ -22,33 +22,39 @@ $('.btn').click(function(){
 });
 
 //카누 메뉴 스크롤
-$('.tablist').slick({
-  centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
-//   responsive: [
-//     {
-//       breakpoint: 768,
-//       settings: {
-//         arrows: false,
-//         centerMode: true,
-//         centerPadding: '40px',
-//         slidesToShow: 3
-//       }
-//     },
-//     {
-//       breakpoint: 480,
-//       settings: {
-//         arrows: false,
-//         centerMode: true,
-//         centerPadding: '40px',
-//         slidesToShow: 1
-//       }
-//     }
-//   ]
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
 
+$(document).ready(function(){
+  $(".tab ul li h1").on("click", function(){
+    const num = $(".tab ul li h1").index($(this)); 
+      $(".tab ul li h1").removeClass("h1-active");
+      $('.tab ul li h1:eq(' + num + ')').addClass("h1-active");
+  });
+});
 
+$('.tabmenu01').click(function(){
+  $('.tab01').fadeIn();
+  $('.tab02').css('display','none');
+  $('.tab03').css('display','none');
+});
+$('.tabmenu02').click(function(){
+  $('.tab02').fadeIn().css('display','flex');
+  $('.tab01').hide();
+  $('.tab03').css('display','none');
+});
+$('.tabmenu03').click(function(){
+  $('.tab03').fadeIn().css('display','flex');
+  $('.tab02').hide();
+  $('.tab01').css('display','none');
+});
 
 //kanu cf
 var swiper = new Swiper(".videoSwiper", {
@@ -60,16 +66,3 @@ var swiper = new Swiper(".videoSwiper", {
     prevEl: ".swiper-button-prev",
   },
 })
-
-//kanu news
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: "auto",
-  spaceBetween: 30,
-  centeredSlides:true,
-  grabCursor:true,
-  // loop: true,
-  autoplay : { 
-    delay : 2000,  
-      disableOnInteraction : false, 
-  }
-});

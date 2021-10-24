@@ -56,28 +56,84 @@ nav{
 
 /* section02 */
 .section02{
-    height: 100vh;
     background-color: #ffffff;
 }
 .product{
-    width: 100%;
+    position: absolute;
+    top:35%;
 }
 .tab ul{
     flex-direction: column;
 }
 .tab ul li{
     font-style: italic;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 50px 0;
+    font-weight: 700;
+    color: #999;
 }
-.tablist{
+.tab ul li:hover h1, .h1-active{
+    color: #333;
+    transform: scale(1.2);
+    border-bottom: 1px solid #333;
+    transition: .2s ease;
+}
+ .tablist{
+    width: 65%;
+    margin-right: 0;
+    align-items: flex-end;
+}
+.tablist .swiper-wrapper{
+    height: 480px;
+    align-items: flex-end;
+}
+.tablist .swiper-wrapper .swiper-slide{
+    position: relative;
+    height: auto;
+}
+.tablist .swiper-wrapper .swiper-slide-active .slidetext{
+    position: absolute;
+    top: -5%;
+    left: 5%;
+    font-size: 1.2rem;
+    background-color: #000;
+    color: #fff;
+    width: 400px;
+    padding: 15px 0;
+}
+.slidetext{
+    font-size: 0;
+}
+.tablist .swiper-wrapper .swiper-slide img{
     width: 80%;
 }
-.tablist div img{
-    width:100px;
-    height: 100px;
+.tablist .swiper-wrapper .swiper-slide-active img{
+    width:100% !important;
 }
-
+.mySwiper .swiper-wrapper .swiper-slide-active{
+    width: 450px !important;
+    height: 450px;
+}
+.tablist .swiper-button-prev{
+    top:30px;
+    left: 40px;
+}
+.tablist .swiper-button-next{
+    top:30px;
+    left: 40%;
+}
+.tablist .swiper-button-prev::after{
+    content: "\e906";
+    color:#fff;
+    font-family: 'xeicon';
+    font-size: 1.5rem;
+}
+.tablist .swiper-button-next::after{
+    content:"\e907";
+    color:#fff;
+    font-family: 'xeicon';
+    font-size: 1.5rem;
+}
 /* section03 */
 .section03{
     background:linear-gradient(-180deg, #fff 50%, #f0f0f0 50%);
