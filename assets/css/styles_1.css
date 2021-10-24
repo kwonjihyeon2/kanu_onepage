@@ -71,6 +71,7 @@ nav{
     margin: 50px 0;
     font-weight: 700;
     color: #999;
+    cursor: pointer;
 }
 .tab ul li:hover h1, .h1-active{
     color: #333;
@@ -138,6 +139,32 @@ nav{
 .section03{
     background:linear-gradient(-180deg, #fff 50%, #f0f0f0 50%);
 }
+.open,.open01,.open02{
+    position: absolute;
+    top: 10%;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.close{
+    position: absolute;
+    right: 0;
+    top: -20%;
+    padding: 20px;
+    color: #fff;
+    font-size: 2rem;
+}
+.modal{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+    /* width: auto;
+    height: 500px; */
+}
 .videoSwiper{
     cursor: pointer;
     position: relative;
@@ -188,6 +215,21 @@ nav{
     100%{
         right:-10%;
     }
+}
+.videoSwiper .swiper-button-prev{
+    top:93%;
+    left: 7%;
+}
+.videoSwiper .swiper-button-next{
+    top:93%;
+    left: 32%;
+    color: transparent;
+}
+.videoSwiper .swiper-button-prev::after{
+    content: "\e906";
+    color:#333;
+    font-family: 'xeicon';
+    font-size: 2rem;
 }
 
 /* section04 */

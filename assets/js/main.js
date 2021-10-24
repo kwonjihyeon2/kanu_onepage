@@ -66,3 +66,23 @@ var swiper = new Swiper(".videoSwiper", {
     prevEl: ".swiper-button-prev",
   },
 })
+
+$('#popup').click(function(){
+  $('.open').fadeIn();
+  $('.modal').show();
+})
+$('#popup01').click(function(){
+  $('.open01').fadeIn();
+  $('.modal').show();
+});
+$('#popup02').click(function(){
+  $('.open02').fadeIn();
+  $('.modal').show();
+})
+
+$('.xi-close').click(function(){
+  $('.modal').hide();
+  $('.open').fadeOut();
+  $('.open01').fadeOut();
+  $('.open02').fadeOut();
+})
