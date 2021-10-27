@@ -236,7 +236,7 @@ nav{
     color: transparent;
 }
 .videoSwiper .swiper-button-prev::after{
-    content: "\e906";
+    content: "\e908";
     color:#333;
     font-family: 'xeicon';
     font-size: 2rem;
@@ -402,20 +402,26 @@ nav{
         left: 34%;
     }
     /* section05 */
+    .w-title{
+        width: 55%;
+    }
     .kanu-title p{
-        font-size: 1.8rem;
+        margin-top: 15px;
     }
     .newstitle{
         padding: 60px 0px;
     }
     .newsimg{
-        top: -31%;
+        top: -37%;
         justify-content: flex-end;
     }
     .newsimg img{
-        width: 70%;
+        width: 75%;
     }
     /* section06 */
+    .p-3{
+        align-items: center;
+    }
     .info{
         padding: 0 25px;
     }
@@ -424,10 +430,44 @@ nav{
     }
     .mo-news{
         display: block;
-        width: 80%;
+        width: 90%;
     }
     .news-bg02 img{
         margin-left: auto;
+    }
+    .eventimg img{
+        width: 65%;
+        text-align: center;
+    }
+    .eventimg{
+        pointer-events: none;
+        padding: 0px 20px;
+    }
+    .event{
+        word-break: keep-all;
+        pointer-events: none;
+        opacity: 1;
+        bottom: 5%;
+        left: 40%;
+        padding: 50px 30px;
+        width: 420px;
+    }
+    .mo-news .slick-prev{
+        display: none !important;
+    }
+    .mo-news .slick-next{
+        position: absolute;
+        bottom: 8%;
+        right: 5%;
+        background: none;
+        border: none;
+        font-size: 0;
+        z-index: 99;
+    }
+    .mo-news .slick-next::before{
+        content: "\e90b";
+        font-size: 2.5rem;
+        font-family: 'xeicon';
     }
 }
 @media(min-width:770px){
@@ -500,18 +540,134 @@ nav{
         right: 23%;
     }
     /* section04 */
-    
-    
+    .pc-news{
+        display: none;
+    }
+    .mo-news{
+        display: block;
+        width: 90%;
+    }
+    .event{
+        bottom: 5%;
+        left: 40%;
+        padding: 30px;
+        width: 300px;
+    }
+    .eventimg img{
+        width: 80%;
+        text-align: center;
+    }
+    /* section 05 */
+    .newstitle{
+        padding: 30px 0;
+    }
+    .w-title {
+        width: 53%;
+    }
+    .kanu-title p{
+        font-size: 1.5rem;
+    }
+    .newsimg {
+        top: -31%;
+    }
+    .newsimg img {
+        width: 63%;
+    }
+    .xi-angle-down{
+        bottom:0%;
+    }
+    @keyframes news{
+        0%{
+            bottom: 0%;
+            opacity: 1;
+        }
+        50%{
+            bottom: 3%;
+            opacity: 0.5;
+        }
+        100%{
+            bottom: 0%;
+            opacity: 1;
+        }
+    }
     /* section06 */
-    .list01 .firstlist .col-25{
-        margin:20px auto;
+    .info {
+        padding: 0px;
+    }
+    .info h3{
+        font-size: 2.5rem;
+    }
+    .info h3::after{
+        left: 25%;
+        width: 250px;
+    }
+    .info h1 {
+        font-size: 1.5rem;
+    }
+}
+@media(max-width:545px) {
+    /* section02 */
+    .product {
+        top: 24%;
+        left: 3%;
+    }
+    .tab ul li{
+        margin: 35px;
+        font-size: 1.5rem;
+    }
+    /* section05 */
+    .section05{
+        padding: 100px 0 80px 0;
+    }
+    .eventimg img{
+        width: 100%;
+    }
+    /* section06 */
+    .p-3{
+        flex-direction: column;
+        padding: 30px 0;
+    }
+    .reverse{
+        flex-direction: column-reverse;
+    }
+    .news-bg02 img {
+        margin-left: 0;
     }
 }
 @media(max-width:415px){
+    html{
+        font-size: 14px;
+    }
     .logo img {
         padding-left: 15px;
     }
     .btn{
         padding-right: 15px;
+    }
+    .tablist .swiper-wrapper {
+        height: 400px;
+    }
+    .mySwiper .swiper-wrapper .swiper-slide-active {
+        width: 350px !important;
+        height: 350px;
+    }
+    .tablist {
+        margin-top: 50px;
+    }
+    .tab ul li{
+        margin: 20px;
+    }
+    .product {
+        top: 26%;
+    }
+    .tablist .swiper-wrapper .swiper-slide-active .slidetext {
+        width: 300px;
+    }
+    .tablist .swiper-button-next {
+        top: 54px;
+        left: 68%;
+    }
+    .tablist .swiper-button-prev {
+        top: 55px;
     }
 }

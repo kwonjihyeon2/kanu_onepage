@@ -91,3 +91,6 @@ $('.xi-close').click(function(){
   $('.open01').fadeOut();
   $('.open02').fadeOut();
 })
+
+//kanu event mobile
+$('.single-item').slick({});
