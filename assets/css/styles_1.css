@@ -377,6 +377,9 @@ nav{
         top:30px;
         left: 40%;
     }
+    .modal,.youtube{
+        width: 100%;
+    }
 }
 @media(max-width:1028px){
     .product{
@@ -535,10 +538,6 @@ nav{
     .tablist .swiper-button-next{
         left: 52%;
     }
-    /* section03 */
-    .close{
-        right: 23%;
-    }
     /* section04 */
     .pc-news{
         display: none;
@@ -620,6 +619,10 @@ nav{
     }
     .tablist .swiper-button-next {
         left: 73%;
+    }
+    /* section03 */
+    .close {
+        top:-15%;
     }
     /* section04 */
     .event {
