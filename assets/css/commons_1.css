@@ -109,13 +109,19 @@ section{
     }
 }
 @media(max-width:545px) {
+    section{
+        padding: 50px 0px;
+    }
     .col-50{
         width: 80%;
     }
+    .news .product-text{
+        padding-bottom:0px;
+    }
 }
-@media(max-width:415px) {
-    section{
-        padding: 50px 0px;
+@media(max-width:325px) {
+    .kanu-title {
+        padding: 30px 0;
     }
 }
 
