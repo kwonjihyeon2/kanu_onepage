@@ -94,3 +94,13 @@ $('.xi-close').click(function(){
 
 //kanu event mobile
 $('.single-item').slick({});
+
+
+//modal
+const closeButton = document.querySelector(".closeicon");
+const modal = document.querySelector(".mainmodal")
+
+function closeModal(){
+    modal.style.display = "none";
+}
+closeButton.addEventListener("click", closeModal);
