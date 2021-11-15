@@ -495,7 +495,7 @@ nav{
         pointer-events: none;
         opacity: 1;
         bottom: 5%;
-        left: 40%;
+        left: 37%;
         padding: 50px 30px;
         width: 420px;
     }
@@ -505,16 +505,21 @@ nav{
     .mo-news .slick-next{
         position: absolute;
         bottom: 8%;
-        right: 5%;
+        right: 8%;
         background: none;
         border: none;
         font-size: 0;
-        z-index: 99;
+        z-index: 20;
     }
     .mo-news .slick-next::before{
         content: "\e90b";
         font-size: 2.5rem;
         font-family: 'xeicon';
+    }
+}
+@media (max-width:990px) {
+    .event {
+        width: 400px;
     }
 }
 @media(min-width:770px){
@@ -592,12 +597,12 @@ nav{
     }
     .mo-news{
         display: block;
-        width: 90%;
+        width: 95%;
     }
     .event{
         bottom: 5%;
         left: 40%;
-        padding: 30px;
+        padding: 40px;
         width: 300px;
     }
     .eventimg img{
@@ -682,18 +687,21 @@ nav{
     .videoSwiper .swiper-button-next {
         left: 65%;
     }
+    .mo-news {
+        width: 100%;
+    }
     /* section04 */
     .event {
-        bottom: 3%;
-        left: 36%;
-        padding: 25px;
-        width: 220px;
+        bottom: 5%;
+        left: 29%;
+        padding: 35px;
+        width: 250px;
     }
     .event h1{
         padding-bottom: 15px;
     }
-    .eventimg img{
-        width: 100%;
+    .eventimg img {
+        width: 90%;
     }
     /* section05 */
     .section05{
@@ -807,8 +815,9 @@ nav{
         width: 100%;
     }
     .event {
-        left: 20%;
-        width: 235px;
+        left: 14%;
+        width: 250px;
+        padding: 35px 30px;
     }
     /* section05 */
     .section05 {
@@ -861,12 +870,13 @@ nav{
     }
     /* section05 */
     .event {
-        bottom: 5%;
-        left: 15%;
-        width: 230px;
+        bottom: 12%;
+        left: 14%;
+        width: 220px;
+        padding: 30px;
     }
-    .newsimg {
-        top: -16%;
+    .mo-news .slick-next {
+        bottom: 15%;
     }
     /* section06 */
     .info h1 {
@@ -933,11 +943,20 @@ nav{
         width: auto;
         height: 400px;
     }
+    .event {
+        bottom: 5%;
+        left: 14%;
+        width: 200px;
+        padding: 30px;
+    }
     .news .product-text {
         padding-bottom: 50px;
     }
     .newsimg {
         top: -9%;
+    }
+    .newstitle {
+        padding: 0;
     }
     /* section06 */
     .info h1 {
