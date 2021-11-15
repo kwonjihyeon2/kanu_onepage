@@ -374,7 +374,7 @@ nav{
     font-size: 1rem;
     padding: 10px 0 20px 0;
 }
-/* section06 end */
+/* mainmodal */
 .mainmodal{
     width: 100%;
     height: 100vh;
@@ -835,6 +835,11 @@ nav{
     /* section06 */
     .info h3::after{
         width: 230px;
+    }
+    /* mainmodal */
+    .mainmodal .modal-box{
+        width: 280px;
+        height: 280px;
     }
 }
 @media(max-width:380px) {
