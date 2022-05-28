@@ -1,4 +1,4 @@
-# KANU 홈페이지 리뉴얼 
+# KANU 홈페이지 리뉴얼 퍼블리싱
 <img width="50" src="https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=HTML5&logoColor=white"> <img width="43" src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=CSS3&logoColor=white">
 <img width="80" src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
 
